@@ -28,7 +28,7 @@ app.use('/api/carts', cartRoutes);
 app.use('/api/orders', orderRoutes);
 
 // Health check route
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.send({ status: 'OK', message: 'Server is running' });
 });
 
